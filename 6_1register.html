@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CUSAT</title>
+    <link rel="stylesheet" href="6_1register.css">
+</head>
+<body>
+
+    <!-- INSERT INTO `voter list` (`Register Number`, `Name`, `Email`, `Semester`, `Department`, `Password`) VALUES ('20421060', 'Mohit Kumar', 'mumohit@gmail.com', '4th Semester', 'Information Technology', 'Momohitman'); -->
+
+<header id="header" >
+    <img src="https://e7.pngegg.com/pngimages/451/785/png-clipart-school-of-engineering-cusat-cochin-university-of-science-and-technology-thrikkakkara-bachelor-of-technology-test-science-and-technology-text-logo.png" height="100px" width="100px" align="left" alt="logo">
+    <img src="https://e7.pngegg.com/pngimages/451/785/png-clipart-school-of-engineering-cusat-cochin-university-of-science-and-technology-thrikkakkara-bachelor-of-technology-test-science-and-technology-text-logo.png" height="100px" width="100px" align="right" alt="logo">    
+    <h1>ELECTION REGISTRATION </h1>
+    <h2>SCHOOL OF ENGINEERING</h2>
+    <h3>(COCHIN UNIVERSITY OF SCIENCE AND TECHNOLOGY)</h3>
+</header>
+    
+<nav id="options" >
+    <a href="https://admissions.cusat.ac.in/" span class="Admissions">Admissions  </a>
+    <a href="https://estudents.cusat.ac.in/">Student Login</a>
+    <a href="https://cusat.ac.in/news.php">Developments</a>
+    <a href="https://cusat.ac.in/academics">Academics</a>
+    <a href="https://cusat.ac.in/faculty/">Faculties</a>
+    <a href="#" span class="Archieves" >Archieves</a>
+</nav>
+
+<div class="container">
+    <form class="registration-form" action="6_2login.html" onsubmit ="return verifyPassword(), checkRegisterNo()", >
+    
+        <h1><u>REGISTER FOR ELECTIONS</u></h1>
+            <label for="register_number">Register Number:</label>
+            <input type="number" id="register_number" name="register_number" required>
+            <span id = "message3" style="color:red"> </span> <br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="Semester">Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="">--Select your Semester--</option>
+                <option value="1">1st Semester</option>
+                <option value="2">2nd Semester</option>
+                <option value="3">3rd Semester</option>
+                <option value="4">4th Semester</option>
+                <option value="5">5th Semester</option>
+                <option value="6">6th Semester</option>
+                <option value="7">7th Semester</option>
+                <option value="8">8th Semester</option>
+            </select>
+        
+            <label for="Department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">--Select your Department--</option>
+                <option value="CS">Computer Science</option>
+                <option value="IT">Information Technology</option>
+                <option value="EC">Electronic Communication</option>
+                <option value="SF">Safety And Fire</option>
+                <option value="ME">Mechanical Engineering</option>
+                <option value="CE">Civil Engineering</option>
+                <option value="EE">Electrical Engineering</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id = "message1" style="color:red"> </span> <br>
+    
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <span id = "message2" style="color:red"> </span> <br>
+    
+            <button type="submit">Register</button>
+            <script src="6_1register.js"></script>
+    </form>
+</div>
+
+</body>
+
+<!-- 
+<form id="Login"  action="6_2page2.html">
+    <div class="forum"> -->
+    <!-- <br><br> -->
+    <!-- <p>Register Number : <input type="text" name="reg_no" required ></p>
+    <p>Password : <input type="password" name = "password" required> </p>
+    <p> <input type="submit" value="Login">
+    </div>
+</form>
+
+<form action="">
+    <div class="form2" >
+        <p>Name: <input type="text" name= "name" required></p>
+        <p>Register Number : <input type="text" name="reg_no" required ></p>
+        <p>Password : <input type="password" name = "password" required> </p>
+        <p>Confirm Password : <input type="password" name = "confirm_password" required> </p>
+
+    </div>
+</form> -->
+
+<footer id="footer" >
+    <a href="https://cusat.ac.in/campus-life" span class="Activities" >Campus Life</a>
+    <a href="https://recruit.cusat.ac.in/">Recruitment</a>
+    <a href="https://cusat.ac.in/contact">Contact Us</a>
+    <a href="#" span class="last" > &copy;2023 | CUSAT</a>
+</footer>
+</html>

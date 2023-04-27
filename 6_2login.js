@@ -1,0 +1,1 @@
+ alert("Registered as a voter successfully");
